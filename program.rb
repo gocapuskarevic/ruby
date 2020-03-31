@@ -38,7 +38,6 @@ end
 
 tmp = shuffles(arr, [])
 
-puts tmp
 
 def english_number number
     if number < 0 
@@ -162,5 +161,25 @@ def english_number number
     num_string
     end
 
-    puts english_number(1000000)
 
+def beer_bottles bottles
+
+    string = ''
+    if bottles == 1
+
+        return "There is #{english_number(bottles)} on the shelf,one pade and left zero" 
+
+    end
+
+    string = "There is #{english_number(bottles)} on the shelf,one pade and left #{english_number(bottles-1)}"
+
+    puts string
+
+    beer_bottles(bottles-1)
+    
+    
+
+
+end
+
+puts beer_bottles(386)
