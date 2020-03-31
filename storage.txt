@@ -1,8 +1,0 @@
----
-- ja sam ja
-- jeremija
-- prezivam se...nemam pojma
-- text:
-  - imam
-  - novi
-  - niz
